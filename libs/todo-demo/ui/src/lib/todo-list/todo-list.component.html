@@ -1,0 +1,12 @@
+<ul class="olist">
+	<li class="list-item" *ngFor="let todo of todos">
+		<input
+			class="checkbox"
+			type="checkbox"
+			[checked]="todo.completed"
+			(change)="onUpdate(todo)"
+		/>
+		{{ todo.title }}
+		<button class="delete" (click)="onDelete(todo.id ?? 0)">Delete</button>
+	</li>
+</ul>

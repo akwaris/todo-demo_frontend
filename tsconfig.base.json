@@ -14,7 +14,12 @@
 		"skipLibCheck": true,
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
-		"paths": {}
+		"paths": {
+			"@front-end/libs": ["libs/src/index.ts"],
+			"@todo-demo/data": ["libs/todo-demo/data/src/index.ts"],
+			"@todo-demo/feat": ["libs/todo-demo/feat/src/index.ts"],
+			"@todo-demo/ui": ["libs/todo-demo/ui/src/index.ts"]
+		}
 	},
 	"exclude": ["node_modules", "tmp"]
 }
