@@ -1,3 +1,16 @@
+# Info
+
+Im BackEnd bitte die Todo Klasse ändern, falls nötig. Im FrontEnd besteht es aus:
+id?: number;
+title: string;
+completed: boolean;
+
+Im FrontEnd:
+Um die Möglichkeit mit BackEnd zu verbinden, folgendes im File todo.component.ts unter libs/todo-demo/feat/src/lib:
+
+	private todoService = inject(MockTodoHttpService);    //auskommentieren
+	//private todoService = inject(TodoHttpService);      //kommentar status entfernen
+
 # FrontEnd
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
