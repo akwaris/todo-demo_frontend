@@ -28,9 +28,10 @@ import { MockTodoHttpService } from '../../../data/src/lib/todo-mock-http.servic
 	styles: [],
 })
 export class TodoComponent implements OnInit {
-	private todoService = inject(MockTodoHttpService);
-	//private todoService = inject(TodoHttpService);
-	//
+	//Um die Möglichkeit mit BackEnd zu verbinden, folgendes:
+	private todoService = inject(MockTodoHttpService); //auskommentieren
+	//private todoService = inject(TodoHttpService);                        //kommentar status entfernen
+
 	// State
 	// todos: Todo[] = [
 	//  { id: 1, title: 'Banana', completed: false},
