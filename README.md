@@ -1,15 +1,15 @@
 # Info
 
-Im BackEnd bitte die Todo Klasse ändern, falls nötig. Im FrontEnd besteht es aus:
+In the backend, please modify the Todo class if necessary. In the frontend, it consists of:
 id?: number;
 title: string;
 completed: boolean;
 
-Im FrontEnd:
-Um die Möglichkeit mit BackEnd zu verbinden, folgendes im File todo.component.ts unter libs/todo-demo/feat/src/lib:
+In the frontend:
+To connect with the backend, in the file todo.component.ts under libs/todo-demo/feat/src/lib:
 
-	private todoService = inject(MockTodoHttpService);    //auskommentieren
-	//private todoService = inject(TodoHttpService);      //kommentar status entfernen
+    private todoService = inject(MockTodoHttpService);    //comment out
+    //private todoService = inject(TodoHttpService);      //uncomment
 
 # FrontEnd
 
